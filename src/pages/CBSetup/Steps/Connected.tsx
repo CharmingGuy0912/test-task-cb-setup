@@ -30,14 +30,14 @@ const Connected: React.FC<StepComponentProps> = ({ onNext }) => {
 					<Stripe />
 				</div>
 				<span className='mt-[30px] font-bold text-2xl leading-[35px] tracking-[0.26px] text-center'>Connect Stripe Account</span>
-				<div className='flex max-w-[500px] w-full justify-between items-center bg-white rounded-[10px] mt-[30px] px-[30px] py-[15px]'>
+				<div className='flex sm:flex-col max-w-[500px] w-full justify-between items-center bg-white rounded-[10px] mt-[30px] px-[30px] py-[15px]'>
 					<div className='flex flex-col'>
 						<span className='font-bold text-[15px] leading-[30px] tracking-[0.26px]'>Test Stripe Account</span>
 						<a href='mailto:info@example.com' className='text-[13px] leading-5 tracking-[0.26px] text-[#555555]'>
 							info@example.com
 						</a>
 					</div>
-					<div className='flex gap-[10px] items-center'>
+					<div className='flex gap-[10px] items-center sm:mt-[10px]'>
 						Connected
 						<Success />
 					</div>

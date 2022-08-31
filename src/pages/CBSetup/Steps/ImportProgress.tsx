@@ -7,12 +7,12 @@ import { ReactComponent as Configure } from 'icons/configure.svg'
 
 const ImportProgress: React.FC<StepComponentProps> = ({ onNext }) => {
 	useEffect(() => {
-		setTimeout(onNext, 3000)
+		setTimeout(onNext, 2000)
 	}, [onNext])
 
 	return (
 		<>
-			<div className='flex items-center font-bold text-[13px] leading-[30px] tracking-[0.26px] text-[#555555]'>
+			<div className='md:hidden flex mb-[25px] items-center font-bold text-[13px] leading-[30px] tracking-[0.26px] text-[#555555]'>
 				Overview
 				<div className='ml-4 w-[1px] h-[15px] bg-[#E6E6E6]' />
 				<div className='flex items-center gap-[25px] ml-[15px]'>
@@ -34,7 +34,7 @@ const ImportProgress: React.FC<StepComponentProps> = ({ onNext }) => {
 					Configure
 				</div>
 			</div>
-			<div className='sub-content mt-[25px] flex flex-col justify-center items-center !py-[180px]'>
+			<div className='sub-content flex flex-col justify-center items-center !py-[180px]'>
 				<MoonLoader size={44} speedMultiplier={0.5} />
 				<h3 className='mt-[30px]'>Importing Stripe Configurations</h3>
 				<span className='mt-[10px] max-w-[520px] text-[15px] leading-[30px] tracking-[0.26px] text-[#555555] text-center'>

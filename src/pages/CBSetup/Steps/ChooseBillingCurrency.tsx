@@ -25,7 +25,7 @@ const ChooseBillingCurrency: React.FC<StepComponentProps> = ({ onNext, onPreviou
 				</div>
 			</div>
 			<div className='relative flex flex-col items-center bg-[#F9F9F9] pt-[100px] pb-[60px] px-2 rounded-[4px]'>
-				<BackButton className='absolute top-[30px] left-[30px]' onClick={onPrevious} />
+				<BackButton className='absolute top-[30px] left-[30px] sm:top-[10px] sm:left-[10px]' onClick={onPrevious} />
 				<span className='font-bold text-2xl leading-[35px] tracking-[0.26px] text-center'>Choose Billing Currency</span>
 				<span className='mt-[10px] max-w-[520px] text-[15px] leading-[30px] tracking-[0.26px] text-[#555555] text-center'>
 					Select the currency you want to use to bill your clients.
@@ -37,8 +37,8 @@ const ChooseBillingCurrency: React.FC<StepComponentProps> = ({ onNext, onPreviou
 					</span>
 				</div>
 				<CurrencySelect className='mt-5' />
-				<div className='flex items-center gap-[10px] mt-10'>
-					<input type='checkbox' className='h-4 w-4' onClick={() => setActive((prev) => !prev)} />
+				<div className='flex gap-[10px] mt-10'>
+					<input type='checkbox' className='h-4 w-4 mt-[6px]' onClick={() => setActive((prev) => !prev)} />
 					<span className='font-bold text-[15px] leading-[30px] tracking-[0.26px] text-[#555555]'>
 						I am aware that I cannot change currency later
 					</span>

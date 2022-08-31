@@ -27,10 +27,10 @@ const CBSetup = () => {
 	return (
 		<MainLayout title='Client Billing Setup' className='CBSetup'>
 			<div className='container'>
-				<div className='flex items-center mt-[45px] mb-[30px] pb-[22px] border-b-[1px] border-solid border-[#000]'>
+				<div className='flex items-center mt-[45px] mb-[30px] pb-[22px] border-b-[1px] border-solid border-[#000] sm:flex-col'>
 					<h3>Client Billing</h3>
 					{currentStep === 0 && (
-						<span className='font-medium text-[15px] leading-[30px] tracking-[0.29px] text-[#555555] ml-[5px]'>
+						<span className='font-medium text-[15px] leading-[30px] tracking-[0.29px] text-[#555555] ml-[5px] text-center'>
 							– A full payment solution for your business, free with Incsub
 						</span>
 					)}
