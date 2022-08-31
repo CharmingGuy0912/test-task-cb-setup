@@ -1,0 +1,36 @@
+@import './mixin/media';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.container {
+  width: 1050px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-lg {
+    width: 800px;
+  }
+
+  @include media-md {
+    width: auto;
+  }
+}
+
+header {
+  height: 60px;
+  background-color: #1A1A1A;
+}

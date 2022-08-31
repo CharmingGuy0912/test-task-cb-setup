@@ -1,0 +1,67 @@
+@import 'scss/mixin/_media.scss';
+
+.CBSetup {
+  background-color: #E5E5E5;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.29px;
+
+    color: black;
+  }
+
+  button {
+    border: 1px solid #286EF1;
+    background-color: #286EF1;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15.23px;
+    letter-spacing: 0.26px;
+
+    color: white;
+
+    border-radius: 4px;
+    height: 40px;
+
+    transition: all ease-in-out 150ms;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+      color: #286EF1;
+    }
+
+    &.inactive {
+      border-color: #E6E6E6;
+      background-color: #F5F5F5;
+      color: #6B6B6B;
+      cursor: auto;
+    }
+  }
+
+  svg.unfilled {
+    circle {
+      fill: #AAAAAA;
+    }
+  }
+
+  .svg-fill-blue {
+    path {
+      fill: #286EF1;
+    }
+  }
+
+  .sub-content {
+    padding: 30px;
+    background-color: white;
+
+    border-radius: 10px;
+
+    @include media-md {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
